@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Саша & Катя</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Текст приглашения -->
+  <section class="invitation scroll-animation">
+    <img src="images/1me.jpg" alt="Фото перед приглашением" class="invitation-photo">
+    <h1>Дорогие наши друзья и родные!</h1>
+    <p>Один день в этом году будет для нас особенным, и мы хотим провести его в кругу близких и друзей! С большим удовольствием приглашаем вас разделить с нами этот праздник — нашу свадьбу!</p>
+  </section>
+
+  <!-- Календарь -->
+  <section class="calendar scroll-animation">
+    <h2>Июль 2025</h2>
+    <div class="calendar-grid" id="calendar"></div>
+  </section>
+
+  <!-- Таймер -->
+  <section class="timer scroll-animation">
+    <h2>До свадьбы осталось:</h2>
+    <div class="countdown">
+      <div><span id="days">00</span><small>Дней</small></div>
+      <div><span id="hours">00</span><small>Часов</small></div>
+      <div><span id="minutes">00</span><small>Минут</small></div>
+      <div><span id="seconds">00</span><small>Секунд</small></div>
+    </div>
+  </section>
+
+  <!-- План мероприятия -->
+  <section class="plan scroll-animation">
+    <h2>План мероприятия</h2>
+    <ul class="plan-list">
+      <li><strong>14:30</strong> — Сбор гостей / Welcome</li>
+      <li><strong>15:00</strong> — Церемония</li>
+      <li><strong>16:00</strong> — Банкет</li>
+      <li><strong>22:00</strong> — Завершение вечера</li>
+    </ul>
+  </section>
+
+  <!-- Место проведения -->
+  <section class="venue scroll-animation">
+    <h2>Локация</h2>
+    <p>Наша свадьба будет проходить в шатре Moon’e<br>по адресу: г. Барнаул, улица Раздольная, 22</p>
+    <img src="images/2me.jpg" alt="Место проведения" class="venue-photo">
+  </section>
+
+  <!-- Dress-code -->
+  <section class="dress-code scroll-animation">
+    <h2>DRESS-CODE</h2>
+    <p>Поддержите нас вашими улыбками и красивыми нарядами в палитре торжества:</p>
+    <div class="color-palette">
+      <div class="color-item">
+        <div class="color-circle" style="background-color: #ffffff;"></div>
+        <p>Белый</p>
+      </div>
+      <div class="color-item">
+        <div class="color-circle" style="background-color: #fff5cc;"></div>
+        <p>Желтый</p>
+      </div>
+      <div class="color-item">
+        <div class="color-circle" style="background-color: #cceeff;"></div>
+        <p>Голубой</p>
+      </div>
+      <div class="color-item">
+        <div class="color-circle" style="background-color: #d9e6d5;"></div>
+        <p>Оливковый</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Пожелания -->
+  <section class="wishes scroll-animation">
+    <h2>Пожелания</h2>
+    <p>Если хотите подарить нам ценный и нужный подарок, мы будем очень благодарны за вклад в бюджет нашей молодой семьи.</p>
+    <p>Просим вас не дарить нам цветы, поскольку через день мы уезжаем и не сможем в полной мере насладиться их красотой.</p>
+    <img src="images/3me.jpg" alt="Фото после пожеланий" class="invitation-photo">
+    <p><strong>Детали:</strong> По всем вопросам, связанным с торжественным вечером и сюрпризами, обращаться к нашему координатору: Екатерина<br>
+    <a href="tel:+79293511872">+7 929 351 18 72</a></p>
+  </section>
+
+  <!-- Форма подтверждения -->
+  <section class="form-section scroll-animation">
+    <h2>Подтвердите участие</h2>
+    <form id="guestForm"action="https://formsubmit.co/vitalavolikov@gmail.com" method="POST">
+      <input type="text" name="fullname" placeholder="Ваше ФИО" required>
+      <input type="text" name="guestname" placeholder="С кем посетите мероприятие (ФИО)">
+      <input type="text" name="phone" placeholder="Ваш номер телефона" required>
+      <select name="attendance" required>
+        <option value="">Планируете присутствовать?</option>
+        <option value="Да">Да</option>
+        <option value="Нет">Нет</option>
+      </select>
+      <p>Предпочтения по алкоголю:</p>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="alcohol" value="Белое вино"> Белое вино</label>
+        <label><input type="checkbox" name="alcohol" value="Красное вино"> Красное вино</label>
+        <label><input type="checkbox" name="alcohol" value="Шампанское"> Шампанское</label>
+        <label><input type="checkbox" name="alcohol" value="Водка"> Водка</label>
+        <label><input type="checkbox" name="alcohol" value="Виски"> Виски</label>
+      </div>
+      <input type="text" name="music" placeholder="Ваш любимый музыкальный трек">
+      <button type="submit">Отправить</button>
+    </form>
+  </section>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
